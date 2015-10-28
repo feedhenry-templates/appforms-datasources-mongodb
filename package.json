@@ -1,5 +1,5 @@
 {
-  "name": "fh-dnd-integration-cloud",
+  "name": "fh-datasources-static-cloud",
   "version": "0.0.1",
   "description": "Feedhenry Sample Service Using Hard Coded Data for Datasources",
   "main": "application.js",

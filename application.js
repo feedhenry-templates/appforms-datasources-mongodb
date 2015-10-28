@@ -4,7 +4,7 @@ var mbaasExpress = mbaasApi.mbaasExpress();
 var cors = require('cors');
 
 // Securable endpoints: list the endpoints which you want to make securable here
-var securableEndpoints = ['jobs'];
+var securableEndpoints = ['assets'];
 
 var app = express();
 
@@ -19,14 +19,9 @@ app.use('/mbaas', mbaasExpress.mbaas);
 app.use(mbaasExpress.fhmiddleware());
 
 /**
- * Jobs endpoints for dealing with RESTful job requests
+ * Assets endpoints for dealing with RESTful assets requests
  */
-app.use('/jobs', require('./lib/jobs.js')());
-
-/**
- * Users endpoints for dealing with users
- */
-app.use('/user', require('./lib/users.js')());
+app.use('/assets', require('./lib/assets.js')());
 
 // You can define custom URL handlers here, like this one:
 app.use('/', function(req, res) {
@@ -35,6 +30,12 @@ app.use('/', function(req, res) {
 
 // Important that this is last!
 app.use(mbaasExpress.errorHandler());
+
+// When this service starts up we need to check that our collection exists.
+// If it doesn't, we will create it
+var bootstrapper = require('./lib/bootstrapper');
+
+bootstrapper.bootstrapData();
 
 var port = process.env.FH_PORT || process.env.OPENSHIFT_NODEJS_PORT || 8001;
 var host = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
