@@ -1,21 +1,21 @@
 {
-  "name": "fh-datasources-static-cloud",
+  "name": "fh-datasources-mongodb-cloud",
   "version": "0.0.1",
-  "description": "Feedhenry Sample Service Using Hard Coded Data for Datasources",
+  "description": "Feedhenry Sample Service Using MongoDB Data for Datasources",
   "main": "application.js",
   "scripts": {
     "start": "node application.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/feedhenry-templates/appforms-datasources-static.git"
+    "url": "git+https://github.com/feedhenry-templates/appforms-datasources-mongodb.git"
   },
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/feedhenry-templates/appforms-datasources-static/issues"
+    "url": "https://github.com/feedhenry-templates/appforms-datasources-mongodb/issues"
   },
-  "homepage": "https://github.com/feedhenry-templates/appforms-datasources-static#readme",
+  "homepage": "https://github.com/feedhenry-templates/appforms-datasources-mongodb#readme",
   "dependencies": {
     "fh-mbaas-api": "^5.0.0",
     "request": "~2.40.0",
