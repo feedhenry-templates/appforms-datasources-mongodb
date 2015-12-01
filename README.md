@@ -1,4 +1,4 @@
-# Feedhenry Sample Service Using MongoDB Data for Datasources
+# Feedhenry Sample Service Using MongoDB Data for Data Sources
 
 This is a sample RESTful service to load a list of **Assets** stored in a MongoDB database that is properly formatted as a Data Source.
 
@@ -8,20 +8,14 @@ The assets are pre-populated when the service first starts.  They can also be ed
 
 An example of the Data Sources format is below:
 
-    [
-        {
-            "key": "some_key",
-            "value": "some_value"
-        }
-    ]
-
-You can also choose which item is to be selected by default by adding the "selected" property
+You can also choose which item is to be selected by default by setting the "selected" property to true
 
 
     [
         {
             "key": "some_key",
-            "value": "some_value"
+            "value": "some_value",
+            "selected": false
         },
         {
             "key": "other_key",
