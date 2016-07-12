@@ -129,16 +129,13 @@ module.exports = function(grunt) {
 
   // Testing tasks
   grunt.registerTask('test', ['shell:unit', 'shell:accept']);
-  grunt.registerTask('unit', ['shell:unit']);
+  grunt.registerTask('unit', ['env:local', 'shell:unit']);
   grunt.registerTask('accept', ['env:local', 'shell:accept']);
 
   // Coverate tasks
   grunt.registerTask('coverage', ['shell:coverage_unit', 'shell:coverage_accept']);
   grunt.registerTask('coverage-unit', ['shell:coverage_unit']);
   grunt.registerTask('coverage-accept', ['env:local', 'shell:coverage_accept']);
-
-  // Making grunt default to force in order not to break the project.
-  grunt.option('force', true);
 
   grunt.registerTask('analysis', ['plato:src', 'open:platoReport']);
 
