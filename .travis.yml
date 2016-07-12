@@ -1,6 +1,8 @@
 language: node_js
+group: edge
 sudo: required
 services:
+  - mongodb
   - docker
 node_js:
   - "0.10"
