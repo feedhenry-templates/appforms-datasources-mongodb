@@ -1,6 +1,6 @@
 {
   "name": "fh-datasources-mongodb-cloud",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Feedhenry Sample Service Using MongoDB Data for Datasources",
   "main": "application.js",
   "scripts": {
@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/feedhenry-templates/appforms-datasources-mongodb#readme",
   "dependencies": {
-    "fh-mbaas-api": "^5.13.8",
+    "fh-mbaas-api": "^5.13.9",
     "request": "~2.40.0",
     "body-parser": "~1.0.2",
     "express": "~4.0.0",
