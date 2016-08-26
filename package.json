@@ -1,6 +1,6 @@
 {
   "name": "fh-datasources-mongodb-cloud",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Feedhenry Sample Service Using MongoDB Data for Datasources",
   "main": "application.js",
   "scripts": {
