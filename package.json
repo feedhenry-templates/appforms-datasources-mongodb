@@ -5,7 +5,7 @@
   "main": "application.js",
   "scripts": {
     "start": "node application.js",
-    "test": "grunt unit"
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
     "async": "1.5.0"
   },
   "devDependencies": {
+    "grunt": "^0.4.0",
     "grunt-concurrent": "latest",
     "grunt-contrib-watch": "latest",
     "grunt-env": "~0.4.1",
