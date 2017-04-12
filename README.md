@@ -1,4 +1,5 @@
 # Feedhenry Sample Service Using MongoDB Data for Datasources
+[![Dependency Status](https://img.shields.io/david/feedhenry-templates/appforms-datasources-mongodb.svg?style=flat-square)](https://david-dm.org/feedhenry-templates/appforms-datasources-mongodb)
 
 This is a sample RESTful service to load a list of **Assets** stored in a MongoDB database that is properly formatted as a Data Source.
 
