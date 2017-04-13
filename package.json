@@ -5,7 +5,8 @@
   "main": "application.js",
   "scripts": {
     "start": "node application.js",
-    "test": "grunt test"
+    "test": "grunt test",
+    "coverage": "grunt coverage"
   },
   "repository": {
     "type": "git",

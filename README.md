@@ -30,4 +30,23 @@ You can also choose which item is to be selected by default by adding the "selec
             "selected": true
         }
     ]
+# Build
+```
+npm install
+```
+# Test
 
+All the tests are in the "test/" directory. The cloud app is using mocha as the test runner. 
+
+To run:
+* unit the tests:
+As pre-requisite, have:
+* [mongoDB locally installed](https://www.mongodb.com/)
+```
+mongod
+npm test
+```
+* coverage report for unit tests:
+```
+npm run coverage
+```
