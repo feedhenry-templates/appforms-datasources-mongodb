@@ -42,8 +42,10 @@ To run:
 * unit the tests:
 As pre-requisite, have:
 * [mongoDB locally installed](https://www.mongodb.com/)
+* [redis locally installed](https://redis.io/)
 ```
 mongod
+redis-server /usr/local/etc/redis.conf
 npm test
 ```
 * coverage report for unit tests:
