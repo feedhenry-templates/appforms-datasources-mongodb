@@ -2,12 +2,6 @@ var assert = require('assert');
 var request = require('supertest');
 var proxyquire = require('proxyquire');
 
-var corsMock = function () {
-  return function (req, res, next) {
-
-    return next();
-  };
-};
 var mbaasApiStub = {
   mbaasExpress: function () {
     return {
@@ -21,9 +15,6 @@ var mbaasApiStub = {
         return function (req, res, next) {
           return next();
         };
-      },
-      cloud: function () {
-        return function (req, res, next) { return next(); };
       },
       errorHandler: function () {
         return function (req, res, next) { return next(); };
